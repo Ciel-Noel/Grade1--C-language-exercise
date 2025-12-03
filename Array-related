@@ -24,5 +24,5 @@ void main(){
         sum += arr[i];
     }
     ave = (float)sum / num;    //强制数据转换，确保浮点数参与运算
-    printf("数组的最大值为%d,最小值为%d,平均值为%.2f,最大值下标为%d,最小值下标为%d",max,min,ave,j,i);
+    printf("数组的最大值为%d,最小值为%d,平均值为%.2f,最大值下标为%d,最小值下标为%d",max,min,ave,j,k);
 }
