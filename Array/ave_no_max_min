@@ -11,18 +11,18 @@ int main(){
         scanf("%f",&arr[i]);
     }
     
-    float max = arr[0], min = arr[0];
+    float max = arr[0], min = arr[0];    // 初始化max和min的值
 
     for (i = 0; i < 5; i++){
         sum += arr[i];
         if (max <= arr[i]){
             max = arr[i];
         }
-        if (min >= arr[i]){
+        if (min >= arr[i]){    // 找到最大最小值
             min = arr[i];
         }
     }
 
-    ave = (sum - max - min)/3;
+    ave = (sum - max - min)/3;    // 普通总和减去最大最小值
     printf("评分的平均数为%.2f", ave);
 }
