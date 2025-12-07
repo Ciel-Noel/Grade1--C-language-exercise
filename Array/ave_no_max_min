@@ -1,0 +1,28 @@
+// A competiton which there are 5 judges score,you should work out the average score without max and min.You will only use a total of 3 numbers to calculate the average.
+
+#include <stdio.h>
+
+int main(){
+    float arr[5];
+    int i;
+    float sum = 0, ave;
+    printf("请输入评分，以回车分隔");
+    for (i = 0; i < 5; i++){
+        scanf("%f",&arr[i]);
+    }
+    
+    float max = arr[0], min = arr[0];
+
+    for (i = 0; i < 5; i++){
+        sum += arr[i];
+        if (max <= arr[i]){
+            max = arr[i];
+        }
+        if (min >= arr[i]){
+            min = arr[i];
+        }
+    }
+
+    ave = (sum - max - min)/3;
+    printf("评分的平均数为%.2f", ave);
+}
